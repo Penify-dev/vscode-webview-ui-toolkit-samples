@@ -84,6 +84,6 @@
   },
   "dependencies": {
     "@vscode/webview-ui-toolkit": "^1.2.2",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.1"
   }
 }
