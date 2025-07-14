@@ -30,6 +30,7 @@ async function main() {
 }
 
 async function installLatestToolkitPackage(rootDir, installDir = '') {
+	
   try {
     const dirs = getSubDirectories(rootDir);
     for (const dir of dirs) {
