@@ -19,6 +19,7 @@ const execShellCommand = util.promisify(exec);
  * 
  */
 async function main() {
+	
 	console.log('Updating toolkit package to latest version...');
   console.log();
 
@@ -51,6 +52,7 @@ function getSubDirectories(source) {
 }
 
 const colors = {
+	
 	reset: '\x1b[0m',
 	bold: '\x1b[1m',
 	dim: '\x1b[2m',
