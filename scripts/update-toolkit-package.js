@@ -29,6 +29,14 @@ async function main() {
 	console.log(color(['bold', 'green'], 'All extension samples updated to the latest version of the toolkit!'));
 }
 
+/**
+ * Updates the @vscode/webview-ui-toolkit package to its latest version in all subdirectories of the specified root directory.
+ *
+ * This function retrieves a list of subdirectories within the given `rootDir`. For each subdirectory, it constructs the installation path and executes an npm command to update the toolkit package. If an error occurs during this process, it logs the error message and exits the process.
+ *
+ * @param {string} rootDir - The root directory containing the subdirectories where the toolkit package will be updated.
+ * @param {string} [installDir=''] - An optional subdirectory within each `rootDir` to target for the update. Defaults to an empty string, indicating the root of each subdirectory.
+ */
 async function installLatestToolkitPackage(rootDir, installDir = '') {
 	
   try {
