@@ -6,17 +6,7 @@ const util = require('util');
 const execShellCommand = util.promisify(exec);
 
 /**
- * This script automates the process of installing the latest version of the 
- * toolkit package in every sample extension.
- * 
- * Run `node scripts/update-toolkit-package.js` from the root directory
- * of this repository.
- * 
- * Updating the script:
- * 
- * To update this script to include a new directory, add a new call to the
- * `installLatestToolkitPackage` function within the `main` function below.
- * 
+ * Updates the toolkit package to the latest version in specified directories.
  */
 async function main() {
 	
